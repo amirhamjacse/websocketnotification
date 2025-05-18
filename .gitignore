@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pyt
+*.pyo
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+
+# Django stuff
+*.log
+*.pot
+*.pyc
+db.sqlite3
+media/
+staticfiles/
+local_settings.py
+
+# Django migrations
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# VSCode
+.vscode/
+
+# MacOS
+.DS_Store
+
+# JetBrains IDEs
+.idea/
+
+# PyCharm
+*.iml
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Testing
+.tox/
+.pytest_cache/
+
+# dotenv
+.env
+.env.*
+
+# MySQL/PostgreSQL dumps
+*.sql
+*.dump
+
+# System Files
+Thumbs.db
+ehthumbs.db
