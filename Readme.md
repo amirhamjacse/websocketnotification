@@ -1,5 +1,3 @@
-Sure! Here's a professional and clear **README.md** file for your project, explaining that it uses WebSocket notifications and runs with Daphne.
-
 ````markdown
 # WebSocket Notification
 
@@ -114,7 +112,4 @@ This project is open-source and free to use.
 
 Feel free to contribute or open issues!
 
-```
-
-Would you like me to help create `requirements.txt` or any other files?
 ```
