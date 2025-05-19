@@ -14,6 +14,7 @@ from django.utils.decorators import method_decorator
 import json
 from .models import Item
 
+
 @method_decorator(csrf_exempt, name='dispatch')
 class CreateItemView(View):
     def post(self, request):
