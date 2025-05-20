@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'channels',
     'rest_framework',
     'informationmanagemnt',
+    'exam',
 ]
 
 
