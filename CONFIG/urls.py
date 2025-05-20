@@ -23,5 +23,6 @@ urlpatterns = [
     path('notifications/', views.notification_page, name='notification_page'),
     path('create-item/', views.CreateItemView.as_view(), name='create-item'),
     path('api/', include('informationmanagemnt.urls')),
+    path('exam/', include('exam.urls')),
     
 ]
