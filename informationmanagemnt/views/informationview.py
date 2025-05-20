@@ -12,3 +12,20 @@ class InformationDataView(APIView):
         query = InformationData.objects.all()
         serialized = InforamtionDataSerializer(query, many=True)
         return Response(data=serialized.data)
+
+    def post(self, request):
+        serialized = InforamtionDataSerializer(data=request.data)
+        if serialized.is_valid():
+            serialized.save()
+        return Response(data=serialized.data)
+    
+    def patch(self, request):
+        instance = InformationData.objects.filter(pk=1).last()
+        serialize = InforamtionDataSerializer(
+            instance, data=request.data,
+            partial=True
+            )
+        if serialize.is_valid():
+            serialize.save()
+        # print(instance.id, 12* '-----------')
+        return Response(data=serialize.data)
