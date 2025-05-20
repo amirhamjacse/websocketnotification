@@ -29,3 +29,8 @@ class InformationDataView(APIView):
             serialize.save()
         # print(instance.id, 12* '-----------')
         return Response(data=serialize.data)
+
+    def delete(self, request):
+        instance = InformationData.objects.filter(pk=2).last()
+        instance.delete()
+        return Response({"details": "Delete Successfully"})
