@@ -1,6 +1,10 @@
-from .informodel import InformationData
+from .informodel import (
+    InformationData,
+    ApprovalLog
+)
 
 __all__ = [
     InformationData,
+    ApprovalLog,
 
 ]
