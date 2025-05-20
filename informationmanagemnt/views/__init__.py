@@ -1,5 +1,15 @@
-from .informationview import InformationDataView
+from .informationview import (
+    InformationDataView,
+)
+from .flowview import (
+    CreateInformationView,
+    ApproveInformationView,
+    RejectInformationView,
+)
 
 __all__ = [
-    InformationDataView
+    InformationDataView,
+    CreateInformationView,
+    ApproveInformationView,
+    RejectInformationView,
 ]
